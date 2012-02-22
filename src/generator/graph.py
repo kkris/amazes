@@ -3,10 +3,11 @@ class Node(object):
     A class representing a node with specific coordinates.
     """
 
-    def __init__(self, x, y, edges=None):
+    def __init__(self, x, y, edges=None, value=None):
 
         self.x = x
         self.y = y
+        self.value = value
 
         if edges:
             self.edges = edges
