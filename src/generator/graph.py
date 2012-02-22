@@ -13,8 +13,6 @@ class Node(object):
         else:
             self.edges = []
 
-        self.is_start = False
-        self.is_end = False
 
     def add_edge(self, edge):
 
@@ -94,6 +92,7 @@ class Graph(object):
 
         self.nodes[0][0].is_start = True
         self.nodes[-1][-1].is_end = True
+
 
     def get_neighbours_for_node(self, node):
         """
