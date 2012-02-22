@@ -144,7 +144,7 @@ class Window(gtk.Window):
 
             generator_box.pack_start(button, False, False, 0)
 
-        self.size_widget = gtk.SpinButton.new_with_range(2, 100, 1.0)
+        self.size_widget = gtk.SpinButton.new_with_range(5, 100, 1.0)
         generator_box.pack_start(self.size_widget, False, False, 5)
 
         generate_button = gtk.Button.new_with_label('Generate')
